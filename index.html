@@ -5,43 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;400;600&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
     <title>Postgrado IBQ</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
+            <div class="container d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://via.placeholder.com/50" alt=""> Postgrado en IBQ
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Plan de estudio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lineas de generacion
+                      </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Nucleo academico basico</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Infraestructura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Vinculacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+    <!-- <div>
+        <img class="img-fluid" src="https://via.placeholder.com/1920x400" />
+        <p id="text">
+            Hello World!
+        </p>
+    </div> -->
+    <main class="container">
+        <div class="text-center p-4">
+            <p class="description">Programas dentro del <span>PNPC de CONACYT</span></p>
+        </div>
+        <section class="container text-center mb-5">
+            <p>El Departamento de Ingenieria Bioquimica del Instituto Tecnologico de Celaya ofrece</p>
+            <h2>Maestria y doctorado en ciencias de ingenieria bioquimica</h2>
+        </section>
+        <section class="d-md-flex flex-row-reverse justify-content-between align-items-center text-center">
+            <div class="">
+                <h2 class="cabecera-objetivo">Objetivo</h2>
+                <p>Formar investigadores de alto nivel con las competencias científicas y tecnológicas para generar nuevos conocimientos, formar recursos humanos y desarrollar proyectos de innovación, adaptación, mejoramiento y optimización de procesos biotecnológicos
+                    que involucren el uso de materiales o procedimientos de origen vegetal o microbiano. Las líneas de investigación a desarrollar son: Biología Molecular, Bioingeniería y Ciencia y Tecnología de Alimentos.
+                </p>
+            </div>
+            <div class="">
+                <img class="img-fluid" src="https://via.placeholder.com/400" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="row text-center text-md-start">
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://via.placeholder.com/400" alt="">
+                <h2 class="cabecera-objetivo text-center">Mision</h2>
+                <p>Formar investigadores con una formación sólida en los campos del conocimiento de la Ingeniería Bioquímica que generen y desarrollen proyectos de investigación originales y de vanguardia dirigidos al aprovechamiento sustentable de los recursos
+                    naturales de su entorno y que contribuyan al desarrollo científico del país.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://via.placeholder.com/400" alt="">
+                <h2 class="cabecera-objetivo text-center">Vision</h2>
+                <p>Ser reconocidos nacional e internacionalmente como un programa de Doctorado de alto prestigio académico y ampliamente vinculado a los sectores social y productivo mediante proyectos de investigación de alto impacto; ser reconocidos como
+                    formadores de investigadores y académicos de alto nivel que sean protagonistas de la transformación y desarrollo científico de México en el campo de la Biotecnología.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://via.placeholder.com/400" alt="">
+                <h2 class="cabecera-objetivo text-center">Valores</h2>
+                <ul class="list-valores">
+                    <li>Respeto por el ser humano y el medio ambiente</li>
+                    <li>Honestidad y profesionalismo</li>
+                    <li>Disciplina y trabajo autonomo como en equipo.</li>
+                    <li>Liderazgo</li>
+                    <li>Responsabilidad social</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="text-center mt-5">
+            <h3>Alguna pregunta?</h3>
+            <p class="pregunta">Envia un correo a <span>guillermo.silva@itcelaya.edu.mx</span> para obtener mas informacion sobre el proyecto</p>
+            <a href="mailto:guillermo.silva@itcelaya.edu.mx" class="btn-send-email">Enviar Correo</a>
+        </section>
+    </main>
+    <footer class="text-center bg-light">
+        <p>
+            <a href="http://itcelaya.edu.mx">itcelaya.edu.mx</a> | Antonio Garcia Cubas 600, Fovissste, 38010 Celaya, Gto | 461 611 7575
+        </p>
+    </footer>
+    <script src="./libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 
 </html>

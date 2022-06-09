@@ -1,0 +1,117 @@
+$headers: 'Oswald',
+sans-serif;
+$headings-font-family: $headers;
+@import "../libs/bootstrap/scss/bootstrap";
+$base-font-size: 4rem;
+$azul: #0a4f9e;
+$verde: #009966;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    font-family: 'Osvald', sans-serif;
+}
+
+h1 {}
+
+h2 {
+    font-size: 4.5rem;
+    color: $verde;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    color: $azul;
+    text-transform: uppercase;
+}
+
+hr {
+    background-color: $verde;
+    height: 3px;
+}
+
+footer {
+    margin-top: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    p {
+        color: $azul;
+        font-weight: 300;
+        a {
+            text-decoration: none;
+            color: $verde;
+            font-weight: bold;
+            &:hover {
+                color: purple;
+            }
+        }
+    }
+}
+
+.title {
+    font-family: 'Osvald', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.description {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: $azul;
+    span {
+        font-weight: bold;
+    }
+}
+
+.cabecera-objetivo {
+    color: $azul;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.pregunta {
+    font-style: italic;
+    text-align: center;
+    span {
+        font-weight: bold;
+    }
+}
+
+.btn-send-email {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: $verde;
+    color: white;
+    padding: 1.5rem 5rem;
+    margin-top: 3rem;
+    align-items: center;
+    font-size: 2rem;
+    &:hover {
+        color: white;
+        background-color: #027d54;
+    }
+}
+
+.list-valores {
+    list-style-type: square;
+}
